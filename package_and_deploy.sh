@@ -10,4 +10,4 @@ tar -zcf $OUTPUT_FILE  public
 echo "Application saved to $OUTPUT_FILE"
 cp $OUTPUT_FILE builds/blog-latest.tar.gz
 echo "Deploying app"
-ansible-playbook -i deploy/inv.ini deploy/blog.yml 
+ansible-playbook -vvv -i deploy/inv.ini deploy/blog.yml 
