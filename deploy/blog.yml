@@ -1,0 +1,15 @@
+- 
+  hosts: all
+  sudo: true
+  tasks:
+  - {apt: update_cache=yes cache_valid_time=3600}
+  - apt: pkg={{item}} state=latest
+    with_items: [nginx]
+  - {user: 'name=blog generate_ssh_key=yes ssh_key_bits=2048'}
+  - {file: 'name=/home/blog/www state=directory'}
+  - {file: 'name=/home/blog/tmp state=directory'}
+  - {unarchive: src=../builds/blog-latest.tar.gz dest=/home/blog/www}
+  - {file: path=/etc/nginx/sites-enabled/default state=absent}
+  - template: 'src=nginx.conf.j2 dest=/etc/nginx/nginx.conf'
+  - {template: 'src=blog-nginx.conf.j2 dest=/etc/nginx/sites-enabled/blog.conf'}
+  - {service: 'name=nginx state=restarted'}
