@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Muranga&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>http://blog.mjamo.com/</link>
     <description>Recent content on Muranga&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 08 Apr 2015 18:40:02 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.mjamo.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How I Deploy this blog site with Snap-ci</title>
-      <link>http://localhost:1313/blog/2015/04/08/how-i-deploy-this-blog-site-with-snap-ci/</link>
+      <link>http://blog.mjamo.com/blog/2015/04/08/how-i-deploy-this-blog-site-with-snap-ci/</link>
       <pubDate>Wed, 08 Apr 2015 18:40:02 +0300</pubDate>
       
-      <guid>http://localhost:1313/blog/2015/04/08/how-i-deploy-this-blog-site-with-snap-ci/</guid>
+      <guid>http://blog.mjamo.com/blog/2015/04/08/how-i-deploy-this-blog-site-with-snap-ci/</guid>
       <description>&lt;p&gt;I recently got inspired to start blogging again. So my approach was to go ahead and look out for the coolest tools I could use to build my blog. I found a few but narrowed down on a static site built with &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; (a static site generator), basically allows you to write up the posts in markdown which it later converts to Html for you, similar to how &lt;a href=&#34;http://jekyllrb.com/&#34;&gt;jekyll&lt;/a&gt; works. So I went ahead and created a new site without any posts then created a repository for it on github &lt;a href=&#34;https://github.com/muranga/blog&#34;&gt;here&lt;/a&gt;. Having the blog on github allows me automate things a little. I have created a script to build the site and package it in a tar.&lt;/p&gt;
