@@ -10,12 +10,12 @@
   <title>How I Deploy this blog site with Snap-ci &middot; James Muranga</title>
 
   
-  <link rel="stylesheet" href="http://blog.mjamo.com//css/poole.css">
-  <link rel="stylesheet" href="http://blog.mjamo.com//css/hyde.css">
-  <link rel="stylesheet" href="http://blog.mjamo.com//css/poole-overrides.css">
-  <link rel="stylesheet" href="http://blog.mjamo.com//css/hyde-overrides.css">
-  <link rel="stylesheet" href="http://blog.mjamo.com//css/hyde-x.css">
-  <link rel="stylesheet" href="http://blog.mjamo.com//css/highlight/sunburst.css">
+  <link rel="stylesheet" href="http://localhost:1313//css/poole.css">
+  <link rel="stylesheet" href="http://localhost:1313//css/hyde.css">
+  <link rel="stylesheet" href="http://localhost:1313//css/poole-overrides.css">
+  <link rel="stylesheet" href="http://localhost:1313//css/hyde-overrides.css">
+  <link rel="stylesheet" href="http://localhost:1313//css/hyde-x.css">
+  <link rel="stylesheet" href="http://localhost:1313//css/highlight/sunburst.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
@@ -28,8 +28,8 @@
   
   
 
-  <meta name="description" content="Your default page description">
-  <meta name="keywords" content="ansible, golang">
+  <meta name="description" content="Deploying a static site with Snap-ci and ansible">
+  <meta name="keywords" content="snapci,hugo,ansible,static site,deploy,nginx">
   <link rel="author" href="http://plus.google.com/MurangaJames">
 </head>
 <body class="theme-base-08">
@@ -43,7 +43,7 @@
     </div>
 
     <ul class="sidebar-nav">
-      <li class="sidebar-nav-item"><a href="http://blog.mjamo.com//">Blog</a></li>
+      <li class="sidebar-nav-item"><a href="http://localhost:1313//">Blog</a></li>
       
     </ul>
 
@@ -57,7 +57,7 @@
       </li>
     </ul>
 
-    <p>Copyright &copy; 2015 <a href="http://blog.mjamo.com//license">License</a><br/>
+    <p>Copyright &copy; 2015 <a href="http://localhost:1313//license">License</a><br/>
        Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
   </div>
 </div>
@@ -66,7 +66,11 @@
 <div class="content container">
   <div class="post">
     <h1>How I Deploy this blog site with Snap-ci</h1>
-    <span class="post-date">Apr 8, 2015 &middot; 2 minute read &middot; <a href="http://blog.mjamo.com/blog/2015/04/08/how-i-deploy-this-blog-site-with-snap-ci/#disqus_thread">Comments</a>
+    <span class="post-date">Apr 8, 2015 &middot; 2 minute read &middot; <a href="http://localhost:1313/blog/2015/04/08/how-i-deploy-this-blog-site-with-snap-ci/#disqus_thread">Comments</a>
+    
+    <br/>
+    
+    <a class="label" href="http://localhost:1313//categories/deployment">Deployment</a><a class="label" href="http://localhost:1313//categories/hugo">Hugo</a>
     </span>
     <p>I recently got inspired to start blogging again. So my approach was to go ahead and look out for the coolest tools I could use to build my blog. I found a few but narrowed down on a static site built with <a href="http://gohugo.io/">Hugo</a>.</p>
 
@@ -135,7 +139,7 @@ var disqus_shortname = "blogmjamocom";
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
-<script src="http://blog.mjamo.com//js/highlight.pack.js"></script>
+<script src="http://localhost:1313//js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
 <script>
@@ -145,5 +149,8 @@ var disqus_shortname = "blogmjamocom";
   s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
-</body>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>

@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Muranga&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Muranga&#39;s Blog</description>
+    <title>Deployment on Muranga&#39;s Blog</title>
+    <link>http://localhost:1313/categories/deployment/</link>
+    <description>Recent content in Deployment on Muranga&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2015 09:49:10 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Migrating from one Jenkins server to another with no ssh access to the old server</title>
-      <link>http://localhost:1313/blog/2015/04/21/migrating-from-one-jenkins-server-to-another-with-no-ssh-access-to-the-old-server/</link>
-      <pubDate>Tue, 21 Apr 2015 09:49:10 +0300</pubDate>
-      
-      <guid>http://localhost:1313/blog/2015/04/21/migrating-from-one-jenkins-server-to-another-with-no-ssh-access-to-the-old-server/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Wed, 08 Apr 2015 18:40:02 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/deployment/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How I Deploy this blog site with Snap-ci</title>

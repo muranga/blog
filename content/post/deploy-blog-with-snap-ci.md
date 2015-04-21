@@ -1,8 +1,10 @@
 +++
+categories = ["Deployment", "Hugo"]
 date = "2015-04-08T18:40:02+03:00"
 draft = false
 title = "How I Deploy this blog site with Snap-ci"
-
+description = "Deploying a static site with Snap-ci and ansible"
+keywords = ["snapci", "hugo", "ansible", "static site", "deploy", "nginx"]
 +++
 
 I recently got inspired to start blogging again. So my approach was to go ahead and look out for the coolest tools I could use to build my blog. I found a few but narrowed down on a static site built with [Hugo](http://gohugo.io/).
