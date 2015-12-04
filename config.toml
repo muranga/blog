@@ -1,4 +1,4 @@
-baseurl = "http://blog.mjamo.com/"
+baseurl = "https://blog.mjamo.com/"
 languageCode = "en-us"
 title = "Muranga's Blog"
 disqusShortname = "blogmjamocom" # Optional, enable Disqus integration
