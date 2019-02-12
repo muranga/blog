@@ -1,7 +1,7 @@
 +++
 categories = ["Deployment", "Hugo"]
 date = "2015-04-08T18:40:02+03:00"
-draft = false
+draft = true
 title = "How I Deploy this blog site with Snap-ci"
 description = "Deploying a static site with Snap-ci and ansible"
 keywords = ["snapci", "hugo", "ansible", "static site", "deploy", "nginx"]
