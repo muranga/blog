@@ -15,7 +15,7 @@ paginate = 10
 
 [indexes]
     category = "categories"
-## Main Menu
+
 [[menu.main]]
     name = "Posts"
     weight = 100
