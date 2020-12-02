@@ -1,46 +1,42 @@
 baseurl = "https://blog.mjamo.com/"
 languageCode = "en-us"
-title = "Muranga's Blog"
-disqusShortname = "blogmjamocom" # Optional, enable Disqus integration
+title = "James Muranga's Ideas"
 MetaDataFormat = "toml"
-theme = "hyde-x"
+theme = "hyde"
 paginate = 10
 
-[author]
-    name = "James Muranga"
-
+[params]
+    author = "James Muranga"
+    description = "Notes of my day to day encouters as a Software Developer"
+    themeColor = "theme-base-08"
+    highlightjs = false
 [permalinks]
-    # Optional. Change the permalink format for the 'post' content type.
-    # The format shown here is the same one Jekyll/Octopress uses by default.
     post = "/blog/:year/:month/:day/:title/"
 
 [indexes]
-    # Optional. Use if you want tags and lists.
     category = "categories"
 
-[params]
-    # Used when a given page doesn't set its own.
-    defaultDescription = "Your default page description"
-    defaultKeywords = "ansible, golang"
-
-    # Changes sidebar background and link/accent colours.
-    # See below for more colour options.
-    # This also works: "theme-base-08 layout-reverse", or just "layout-reverse".
-    theme = "theme-base-08"
-
-    # Select a syntax highight.
-    # Check the static/css/highlight directory for options.
-    highlight = "sunburst"
-
-    # Displays under the author name in the sidebar, keep it short.
-    # You can use markdown here.
-    tagline = "Dev"
-
-    # Metadata used to drive integrations.
-    googleAuthorship = "MurangaJames"
-    googleAnalytics = "UA-61705249-1"
-    gravatarHash = "8376ac53dea210d3578b33dbf4c3fd9f"
-
-    # Sidebar social links, these must be full URLs.
-    github = "https://github.com/jamesmura/"
-    twitter = "https://twitter.com/murangajames"
+[[menu.main]]
+    name = "Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
+##[[menu.main]]
+##    name = "Portfolio"
+##    identifier = "portfolio"
+##    weight = 200
+##    url = "/portfolio/"
+[[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 300
+    url = "/about/"
+[[menu.main]]
+    name = "Github"
+    url = "https://github.com/jamesmura"
+[[menu.main]]
+    name = "Twitter"
+    url = "https://twitter.com/murangajames"
+[[menu.main]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/muranga/"
