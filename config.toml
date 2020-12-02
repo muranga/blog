@@ -1,13 +1,13 @@
 baseurl = "https://blog.mjamo.com/"
 languageCode = "en-us"
-title = "Muranga's Blog"
+title = "James Muranga's Ideas"
 MetaDataFormat = "toml"
 theme = "hyde"
 paginate = 10
 
 [params]
     author = "James Muranga"
-    description = "Documentation of my day to day encouters as a Software Developer"
+    description = "Notes of my day to day encouters as a Software Developer"
     themeColor = "theme-base-08"
     highlightjs = false
 [permalinks]
