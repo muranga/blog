@@ -24,7 +24,7 @@ Build software for a living
 
 ***Enjoy** Listening to sci-fi books [#KTF](https://www.reddit.com/r/KTF/)*
 
-***Like** Reading Software written in Go* 
+***Like** Reading And Writing Software written in Go and Python*
 
 ***Enjoy** Sharing what I have learnt*
 
