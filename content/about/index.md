@@ -11,7 +11,9 @@ Build software for a living
 
 ### Where I have worked
 
-(Nov 2012 - Present) *Lead Software Engineer / Tech Lead* [@Thoughtworks](https://www.thoughtworks.com)
+(Jan 2021 - Present) *Staff Software Engineer* [@onemedical](https://www.onemedical.com)
+
+(Nov 2012 - Jan 2021) *Lead Software Engineer / Tech Lead* [@Thoughtworks](https://www.thoughtworks.com)
 
 (Oct 2011 - 2013) *Founding Engineer* [@CodeSync](https://www.codesync.ug)
 
@@ -20,7 +22,7 @@ Build software for a living
 
 ***Love** Taking photos*
 
-***Spend** Alot of time on sci-fi books [#KTF](https://www.reddit.com/r/KTF/)*
+***Enjoy** Listening to sci-fi books [#KTF](https://www.reddit.com/r/KTF/)*
 
 ***Like** Reading Software written in Go* 
 
