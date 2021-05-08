@@ -7,7 +7,7 @@ paginate = 10
 
 [params]
     author = "James Muranga"
-    description = "Notes of my day to day encouters as a Software Developer"
+    description = "Notes of my day to day encounters as a Software Developer"
     themeColor = "theme-base-08"
     highlightjs = false
 [permalinks]
