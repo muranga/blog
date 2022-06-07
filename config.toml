@@ -2,7 +2,7 @@ baseurl = "https://blog.mjamo.com/"
 languageCode = "en-us"
 title = "James Muranga's Ideas"
 MetaDataFormat = "toml"
-theme = "hyde"
+theme = "nam"
 paginate = 10
 
 [params]
