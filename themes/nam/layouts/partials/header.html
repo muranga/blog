@@ -1,0 +1,17 @@
+<div id="nav-border" class="container mx-auto">
+    <nav id="nav" class="flex flex-row py-8">
+        {{ range .Site.Menus.main }}
+        <div class="basis-1/4">
+            <a class="px-4 py-2 font-semibold text-sm bg-blue-400 text-white rounded-full shadow-sm" href="{{ .URL }}">
+                {{ if .Pre }}
+                {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
+                {{ $icon }}
+                {{ end }}
+                {{ $text := print .Name | safeHTML }}
+                {{ $text }}
+            </a>
+        </div>
+
+        {{ end }}
+    </nav>
+</div>

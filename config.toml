@@ -17,6 +17,11 @@ paginate = 10
     category = "categories"
 
 [[menu.main]]
+    name = "Index"
+    weight = 100
+    identifier = "index"
+    url = "/"
+[[menu.main]]
     name = "Posts"
     weight = 100
     identifier = "posts"
