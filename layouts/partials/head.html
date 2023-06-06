@@ -1,0 +1,26 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Liste - {{ .Site.BaseURL }}">
+    <title>{{ if eq .IsHome true }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="icon" href="{{ .Site.BaseURL }}/assets/favicon.ico">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+    <link rel="alternate" type="application/atom+xml" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}/atom.xml" />
+    <link rel="alternate" type="application/json" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}/feed.json" />
+    <link rel="me" href="https://mstdn.plus/@jmuranga" />
+   
+    {{ $styles := resources.Get "scss/styles.scss" | toCSS (dict "outputStyle" "compressed") | minify }}
+    {{ $styles_extra := resources.Get "scss/_extra.scss" | toCSS (dict "outputStyle" "compressed") | minify }}
+    <style>{{ $styles.Content | safeCSS }} {{ $styles_extra.Content | safeCSS }}</style>
+  
+    {{ if .IsHome -}}
+  {{ else if .IsPage }}
+  {{ $author :=  or (.Params.author) (.Site.Author.name) }}
+  {{ $org_name :=  .Site.Title }}
+  {{ end }}
+  
+  </head>
