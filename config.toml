@@ -2,7 +2,7 @@ baseurl = "https://blog.mjamo.com/"
 languageCode = "en-us"
 title = "James Muranga's Ideas"
 MetaDataFormat = "toml"
-theme = "hyde"
+theme = "maverick"
 paginate = 10
 
 [params]
@@ -21,22 +21,11 @@ paginate = 10
     weight = 100
     identifier = "posts"
     url = "/posts/"
-##[[menu.main]]
-##    name = "Portfolio"
-##    identifier = "portfolio"
-##    weight = 200
-##    url = "/portfolio/"
 [[menu.main]]
     name = "About"
     identifier = "about"
     weight = 300
     url = "/about/"
 [[menu.main]]
-    name = "Github"
-    url = "https://github.com/jamesmura"
-[[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/murangajames"
-[[menu.main]]
-    name = "LinkedIn"
-    url = "https://www.linkedin.com/in/muranga/"
+    name = "Photos"
+    url = "https://glass.photo/ja4mo"
