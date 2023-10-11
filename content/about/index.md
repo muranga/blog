@@ -10,7 +10,7 @@ Dad from 🇺🇬 who writes software for a living.
 Fujifilm camera enthuisiast.
 
 ## Links
- 
+
 [LinkedIn](https://www.linkedin.com/in/muranga/)
 [Github](https://github.com/jamesmura)
 [Twitter](https://twitter.com/murangajames)
@@ -18,6 +18,7 @@ Fujifilm camera enthuisiast.
 
 
 ## Companies for which I have written software
+(Aug 2023) *Tech Lead* [@asana](https://www.asana.com)
 
 (Jun 2022 - Jun 2023) *Senior Staff Software Engineer* [@shopify](https://www.shopify.com)
 
