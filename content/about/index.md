@@ -14,7 +14,7 @@ Fujifilm camera enthuisiast.
 [LinkedIn](https://www.linkedin.com/in/muranga/)
 [Github](https://github.com/jamesmura)
 [Twitter](https://twitter.com/murangajames)
-[Mastadon](https://mstdn.plus/@jmuranga/)
+[Mastadon](https://mas.to/@jmuranga)
 
 
 ## Companies for which I have written software
