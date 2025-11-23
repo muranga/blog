@@ -3,7 +3,9 @@ languageCode = "en-us"
 title = "James Muranga's Ideas"
 MetaDataFormat = "toml"
 theme = "maverick"
-paginate = 10
+
+[pagination]
+    pagerSize = 10
 
 [params]
     author = "James Muranga"
@@ -21,11 +23,6 @@ paginate = 10
     weight = 100
     identifier = "posts"
     url = "/posts/"
-[[menu.main]]
-    name = "About"
-    identifier = "about"
-    weight = 300
-    url = "/about/"
 [[menu.main]]
     name = "Photos"
     url = "https://glass.photo/ja4mo"
