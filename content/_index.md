@@ -6,9 +6,7 @@ title: "James Muranga's Ideas"
 
 # Hi there! 👋
 
-Dad from 🇺🇬 who writes software for a living.
-
-Fujifilm camera enthusiast.
+I'm a software engineer from Uganda 🇺🇬, currently building things for the web. When I'm not coding, I'm usually capturing moments with my Fujifilm camera.
 
 ## Connect
 
