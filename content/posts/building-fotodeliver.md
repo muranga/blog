@@ -15,9 +15,9 @@ Yes, there are plenty of tools that already solve this problem. Pixieset, ShootP
 
 It's easy to get comfortable with the frameworks and tools you use at your day job. You know them well, they pay the bills, and there's rarely a reason to reach for something unfamiliar. But that comfort can become a bubble.
 
-For this project, I'm going all-in on [Cloudflare](https://developers.cloudflare.com/). Workers, Pages, R2, D1 — the whole stack. No postgresql, no traditional server framework (django, rails, labstack/echo).Still going to use react-router. 
+For this project, I'm going all-in on [Cloudflare](https://developers.cloudflare.com/). Workers, Pages, R2, D1 — the whole stack. No postgresql, no traditional server framework (django, rails, labstack/echo). Still going to use react-router. 
 
-This feels a lot like when I started my career building on Google App Engine. A platform that handled the infrastructure so you can focused on the product. Cloudflare's developer experience has that same energy — opinionated with flexibility to build real things.
+This feels a lot like when I started my career building on Google App Engine. A platform that handled the infrastructure so you could focus on the product. Cloudflare's developer experience has that same energy — opinionated with flexibility to build real things.
 
 ## How Much Does AI Actually Help?
 
@@ -50,4 +50,4 @@ I'll document the build process here, the wins, the frustrations, and the honest
 
 First update coming soon.
 
-I am not sure about building in public but maybe this will help keep me accountable to actually finish this project.
+I'm not sure about building in public, but maybe this will help keep me accountable to actually finish this project.
