@@ -36,9 +36,13 @@ I'm a software engineer from Uganda 🇺🇬, currently building things for the 
 ## What I Enjoy
 
 📸 Taking photos  
+
 🎧 Listening to sci-fi books
+
 💻 Reading and writing software in Go and Python  
+
 ✍️ Sharing what I have learnt
+
 🤝 Helping teammates succeed
 
 *Looking for my photos? Find them [here](https://glass.photo/ja4mo)*
