@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Liste - {{ .Site.BaseURL }}">
     <title>{{ if eq .IsHome true }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-    <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="description"
+        content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/schema.html" . }}
     {{ template "_internal/google_analytics.html" . }}
@@ -14,13 +15,17 @@
     <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
     <link rel="alternate" type="application/atom+xml" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}/atom.xml" />
     <link rel="alternate" type="application/json" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}/feed.json" />
-    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    <link rel="shortcut icon" type="image/png"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     {{ $styles := resources.Get "scss/styles.scss" | toCSS (dict "outputStyle" "compressed") | minify }}
     {{ $styles_extra := resources.Get "scss/_extra.scss" | toCSS (dict "outputStyle" "compressed") | minify }}
     <style>{{ $styles.Content | safeCSS }} {{ $styles_extra.Content | safeCSS }}</style>
-  
+
     {{ if .IsHome -}}
-  <script type="application/ld+json">
+    <script type="application/ld+json">
   {
       "@context": "http://schema.org",
       "@type": "WebSite",
@@ -31,10 +36,10 @@
       "license": "{{ .Site.Params.Copyright }}"
   }
   </script>
-  {{ else if .IsPage }}
-  {{ $author :=  or (.Params.author) (.Site.Author.name) }}
-  {{ $org_name :=  .Site.Title }}
-  <script type="application/ld+json">
+    {{ else if .IsPage }}
+    {{ $author := or (.Params.author) (.Site.Author.name) }}
+    {{ $org_name := .Site.Title }}
+    <script type="application/ld+json">
   {
       "@context": "http://schema.org",
       "@type": "BlogPosting",
@@ -84,6 +89,6 @@
       "keywords" : [ {{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}" {{ end }}]
   }
   </script>
-  {{ end }}
-  
-  </head>
+    {{ end }}
+
+</head>
