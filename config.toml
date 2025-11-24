@@ -2,7 +2,6 @@ baseurl = "https://blog.mjamo.com/"
 languageCode = "en-us"
 title = "James Muranga's Ideas"
 MetaDataFormat = "toml"
-theme = "maverick"
 
 [pagination]
     pagerSize = 10
