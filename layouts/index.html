@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  {{ partial "head.html" . }}
+{{ partial "head.html" . }}
+
 <body>
   <a class="skip-link" href="#main">Skip to main</a>
   <main id="main">
@@ -8,22 +9,23 @@
       {{ partial "header.html" . }}
       {{ .Content }}
       {{ if gt (len ( where .Site.RegularPages "Section" "posts" )) 0 }}
-      <h1>Latest Post</h1>
-      <section>
+      <h1>Latest Posts</h1>
+      <section class="latest-posts">
         {{ range (first 3 (where .Site.RegularPages "Section" "posts" ).ByDate.Reverse) }}
-          <p>
-            <time class="g time" datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "2006-01-02" .Date }}</time>&nbsp;
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-          <p>
+        <article class="post-item">
+          <a class="link" href="{{ .Permalink }}" title="{{ .Title }}">
+            <h2>{{ .Title }}</h2>
+          </a>
+          <div class="meta">
+            <time class="time" datetime="{{ dateFormat " 2006-01-02" .Date }}">{{ dateFormat "Jan 2, 2006" .Date
+              }}</time>
+          </div>
+        </article>
         {{ end }}
       </section>
       {{ end }}
     </div>
-
-    <div class="content">
-        {{ partial "footer.html" . }}
-    </div>
-   
   </main>
 </body>
+
 </html>

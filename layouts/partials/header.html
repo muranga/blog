@@ -1,0 +1,18 @@
+<header>
+  <p class="site-title">
+    <a href="/">
+      <b>{{ .Site.Title }}</b>
+      <span class="animate-blink">▮</span>
+    </a>
+  </p>
+  <nav>
+    <ul class="nav-menu">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+      <li class="{{ if $currentPage.HasMenuCurrent " main" . }}active{{ end }}">
+        <a href="{{ .URL }}"><span>{{ .Name }}</span></a>
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>
