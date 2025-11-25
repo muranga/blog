@@ -23,11 +23,12 @@ This feels a lot like when I started my career building on Google App Engine. A 
 
 The second experiment is about AI coding assistants. Everyone has opinions. I want data.
 
-I'll be trying out 3 different AI tools to build FotoDeliver and tracking how much they actually contribute:
+I'll be comparing two AI coding tools as I build FotoDeliver:
 
-- **[Claude Code](https://claude.ai/code)** 
-- **[AmpCode](https://ampcode.com)** 
-- **[Antigravity](https://antigravity.dev)** 
+- **[Claude Code](https://claude.ai/code)**
+- **[Antigravity](https://antigravity.dev)**
+
+Antigravity has some interesting features that set it apart, like built-in browser support that makes it easier to handle more parts of the development cycle without switching contexts. I'm curious to see how much that matters in practice.
 
 The goal isn't to crown a winner. I want to understand where these tools genuinely save time and where they get in the way. Can they handle the boring parts so I can focus on the interesting problems?
 
